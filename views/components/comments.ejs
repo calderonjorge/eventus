@@ -1,0 +1,25 @@
+<div class="bg__comments">
+  <div class="contenedor">
+    <div class="carousel__container">
+      <button aria-label="Anterior" class="carousel__prev">‹</button>
+      <div class="comment__list">
+        <% comments.forEach(function(comment) { %>
+          <div class="comment">
+            <img src=<%=`./assets/${comment.foto}` %> class="comment__avatar" alt='<%= comment.evento.cliente %>' >
+              <h2 class="comment__title">
+                <%= comment.evento.cliente %>
+              </h2>
+              <p class="text">
+                <%= comment.mensaje.substr(0,100) + '...' %>
+              </p>
+              <p class="comment__rate">
+                <%= comment.calificacion %>
+              </p>
+              <a href=<%=`/evento/${comment.evento_id}` %> class="comment__cta">Ver reseña</a>
+          </div>
+          <% }); %>
+      </div>
+      <button aria-label="Siguiente" class="carousel__next">›</button>
+    </div>
+  </div>
+</div>

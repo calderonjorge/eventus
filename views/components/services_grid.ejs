@@ -1,0 +1,18 @@
+<div class="flex-container">
+  <% services.forEach(function(service) { %>
+    <div class="service">
+      <div class="circle">
+        <img src=<%=`/assets/icons/services/${service.icon_url}.svg` %> alt="<%= service.nombre %>" class="icon">
+      </div>
+      <h3 class="service__title">
+        <%= service.nombre %>
+      </h3>
+      <p class="service__description">
+        <%= service.descripcion %>
+      </p>
+    </div>
+    <% }); %>
+      <% if (verMas) { %>
+        <a href="/services" class="cta text">Ver más</a>
+        <% } %>
+</div>

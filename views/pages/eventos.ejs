@@ -1,0 +1,48 @@
+<%- include ('../templates/header', {navMode:'block'} )%>
+
+  <body>
+    <section class="contenedor fullpage">
+      <h1 class="title">
+        <%= title%>
+      </h1>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur adipisci autem non minus
+        maxime voluptate.</p>
+      <% eventos.forEach(evento=> { %>
+        <div class="contenedor__evento">
+
+          <img src=<%=`/assets/eventos/${evento.foto}` %> alt="Foto del evento 1" class="evento__img">
+
+          <div class="contenedor__texto">
+            <div class="evento__texto">
+              <h3 class="text">
+                <%= evento.tipo %>
+              </h3>
+              <p class="text">
+                <%= evento.cliente %>
+              </p>
+              <p class="text"> <i class="fa fa-users" aria-hidden="true"></i>
+                <%= evento.num_personas %>
+              </p>
+              <p class="text"><i class="fa fa-calendar" aria-hidden="true"></i>
+                <%= evento.fecha %>
+              </p>
+              <p class="text fa">
+                <%= evento.calificacion %>
+              </p>
+              <p class="text">
+                <%= evento.mensaje %>
+              </p>
+            </div>
+            <a href=<%=`/evento/${evento.id_evento}` %> class="evento__cta text">Ver mas</a>
+          </div>
+        </div>
+        <% }) %>
+    </section>
+
+    <footer class="footer">
+      <%- include ('../templates/footer')%>
+    </footer>
+
+  </body>
+
+  </html>

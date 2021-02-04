@@ -1,0 +1,136 @@
+<%- include ('../templates/header')%>
+
+  <body>
+    <div class="hero" id="home">
+      <img src="/assets/logo.svg" class="hero__logo" alt="Eventus">
+      <h1 class="hero__title">EVENTUS</h1>
+      <p class="hero__text">Celebraciones <i class="hero__text--special">Especiales</i></p>
+    </div>
+    <!-- HERO -->
+    <section id="about-us">
+      <div class="contenedor">
+        <div class="about-us-container">
+          <div class="text-container">
+            <h1 class="title">Nosotros</h1>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aspernatur aliquam, hic
+              aliquid tempore maxime odio optio in laboriosam deleniti eveniet cupiditate doloremque natus blanditiis
+              quis. Fugit ipsam, aperiam perspiciatis ab earum nostrum ipsa animi dicta omnis doloremque repudiandae
+              hic?
+            </p>
+            <a href="#contact" class="cta text">Contactanos</a>
+          </div>
+          <img src="/assets/about-us.jpg" alt="Nosotros">
+        </div>
+        <div class="about-us-container">
+          <img src="/assets/second.jpg" alt="Nosotros">
+          <div class="text-container-right">
+            <h1 class="title">Title</h1>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, odio nisi, quas atque
+              quod fugit dolorem laudantium officia quidem iusto sunt? Deserunt quisquam perspiciatis illo odio ipsum
+              atque tenetur temporibus? Soluta molestias iusto, voluptate reiciendis deleniti quos quibusdam cum id
+              aliquid natus, doloremque quidem adipisci, odio consequatur. Consequatur, ad molestiae?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comments">
+      <div class="contenedor">
+        <h1 class="title">Lo que dicen nuestros clientes</h1>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi, sit tempore facilis
+          laboriosam exercitationem!</p>
+      </div>
+      <%- include ('../components/comments')%>
+
+    </section>
+
+    <section id="services" class="contenedor">
+      <h1 class="title">Nuestros servicios.</h1>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur adipisci autem non minus
+        maxime voluptate.</p>
+      <%- include ('../components/services_grid',{verMas:true})%>
+    </section>
+
+    <div class="paralax">
+      <h1 class="title">Lorem ipsum dolor sit.</h1>
+    </div>
+
+    <section id="work">
+      <div class="contenedor">
+        <h1 class="title">Trabajo</h1>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio corporis ipsum velit
+          voluptate at, temporibus facilis ut officia commodi et ducimus officiis doloribus harum!</p>
+        <div class="gallery__container">
+          <a href="./assets/gallery/1.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-1.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/2.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-2.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/3.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/3.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/4.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-4.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/5.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-5.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/6.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-6.jpg" alt="">
+          </a>
+
+          <a href="./assets/gallery/7.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-7.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/8.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-8.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/9.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-9.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/10.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-10.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/11.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-11.jpg" alt="">
+          </a>
+          <a href="./assets/gallery/12.jpg" data-lightbox="gallery" class="gallery__thumb"
+            data-title="Este es el titulo de la primera imagen.">
+            <img src="assets/gallery/thumb-12.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <%- include ('../templates/contact')%>
+    </section>
+
+    <div class="container-floating">
+      <%- include ('../templates/container_floating')%>
+    </div>
+    <footer class="footer">
+      <%- include ('../templates/footer')%>
+    </footer>
+
+    <script src="./js/glider.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+
+  </body>
+
+
+  </html>
